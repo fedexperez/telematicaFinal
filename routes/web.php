@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home.index');
+Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home.index');
 
 Route::post('/school/save', 'App\Http\Controllers\SchoolController@save')->name('school.save');
 
