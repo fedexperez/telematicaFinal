@@ -10,8 +10,6 @@ RUN composer install \
     --no-scripts \
     --prefer-dist
 
-RUN a2enmod rewrite
-RUN service apache2 restart
 RUN php artisan key:generate
 RUN php artisan storage:link
 RUN php artisan migrate:fresh
