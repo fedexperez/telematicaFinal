@@ -12,7 +12,7 @@ RUN composer install \
 
 RUN php artisan key:generate
 RUN php artisan storage:link
-RUN php artisan migrate:refresh
+RUN php artisan migrate:rollback
 RUN chmod -R 777 storage
 RUN a2enmod rewrite
 RUN service apache2 restart
