@@ -14,7 +14,9 @@ services:
             WWWUSER: '${WWWUSER}'
             LARAVEL_SAIL: 1
         volumes:
-            - '.:/var/www/html'
+            #- '.:/var/www/html'
+            - /mnt/efs/teleFinal:/var/www/html
+            
         networks:
             - sail
         depends_on:
