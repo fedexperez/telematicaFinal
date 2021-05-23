@@ -16,7 +16,7 @@ services:
         volumes:
             #- '.:/var/www/html'
             - /mnt/efs/teleFinal:/var/www/html
-            
+            - '/mnt/efs/teleFinal:/var/www/html'
         networks:
             - sail
         depends_on:
