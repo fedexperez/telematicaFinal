@@ -74,7 +74,11 @@
         </div>
     </header>
     
+    @if (Auth::user())
+
     @yield('content')
+
+    @endif
 
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
